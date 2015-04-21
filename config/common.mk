@@ -123,6 +123,10 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
+# SlothWalls
+PRODUCT_PACKAGES += \
+    SlothWalls
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
@@ -214,7 +218,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 12
+PRODUCT_VERSION_MAJOR = LMP5.1
 PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
@@ -256,7 +260,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
+    CM_BUILDTYPE := 1.0.0
     CM_EXTRAVERSION :=
 endif
 
