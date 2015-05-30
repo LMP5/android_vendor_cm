@@ -3,3 +3,4 @@ add_lunch_combo cm_klte-userdebug
 add_lunch_combo cm_klteusc-userdebug
 add_lunch_combo cm_kltedv-userdebug
 add_lunch_combo cm_shamu-userdebug
+add_lunch_combo cm_bacon-userdebug
