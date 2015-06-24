@@ -217,6 +217,11 @@ PRODUCT_PACKAGES += \
     su
 endif
 
+# Chromium Prebuilt
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+-include prebuilts/chromium/$(CM_BUILD)/chromium_prebuilt.mk
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0
 
